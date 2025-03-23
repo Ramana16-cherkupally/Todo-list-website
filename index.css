@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.4%; 
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 5rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+li{
+    font-size: 3rem;
+    list-style: none;
+    color: rgb(12, 12, 12);  
+}
+
+.Todo-list-element{
+    width: 35rem;
+    margin: 0rem  1rem;
+
+}
+
+.main-todo-div{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    padding: 0.3rem;
+}
+
+.deletebtn{
+   font-size: 2rem;
+   font-weight: 600;
+   background-color: rgb(158, 15, 15);
+
+    &:hover{
+    box-shadow: inset 0 0 0 0.1rem rgb(21, 112, 231);
+    background-color: rgb(214, 19, 19);
+} 
+}
+
+@media(max-width:765px){
+    input{
+        margin-bottom: 2rem;
+    }
+    .deletebtn{
+        padding: 1rem 1.5rem;  
+    }
+    li{
+        font-size: 3rem;
+    }
+}
